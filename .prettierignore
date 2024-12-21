@@ -1,0 +1,45 @@
+# Ignore Next.js build and output directories
+.next/
+out/
+
+# Node modules
+node_modules/
+
+# Environment variable files
+.env
+.env.* 
+
+# Logs
+logs/
+*.log
+
+# Lock files (optional, depending on preference)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Public assets
+public/
+
+# Coverage reports
+coverage/
+
+# Storybook files (if applicable)
+.storybook/
+
+# Prettier config files themselves (optional)
+.prettierrc
+.prettierrc.json
+.prettierrc.js
+.prettierignore
+
+# Ignore Tailwind CSS config (optional)
+tailwind.config.js
+postcss.config.js
+
+# Git files
+.git/
+.gitignore
+
+# IDE and editor configuration
+.vscode/
