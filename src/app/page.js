@@ -4,7 +4,7 @@ import { OpeningTime } from "@/components/opening-time";
 
 export default function Home() {
   return (
-    <main className="container">
+    <main className="container bg-white">
       <Hero />
       <OpeningTime />
       <GoogleMap />
