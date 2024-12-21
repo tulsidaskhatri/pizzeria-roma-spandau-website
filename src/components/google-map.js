@@ -1,37 +1,13 @@
 "use client";
 
-import {
-  GoogleMap as GoogleMapLibComponent,
-  InfoWindow,
-  LoadScript,
-  Marker,
-} from "@react-google-maps/api";
-
-const GoogleMap = () => {
-  // Map container styles
-  const containerStyle = {
-    width: "100%",
-    height: "400px",
-  };
-
-  // Center of the map
-  const center = {
-    lat: 40.748817, // Replace with your restaurant's latitude
-    lng: -73.985428, // Replace with your restaurant's longitude
-  };
-
-  return (
-    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
-      <GoogleMapLibComponent
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={15}
-      >
-        {/* Marker on the restaurant */}
-        <Marker position={center} />
-      </GoogleMapLibComponent>
-    </LoadScript>
-  );
-};
+const GoogleMap = () => (
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d151.67680559102308!2d13.204595!3d52.53653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a857d95b6821e9%3A0xd242266478ff68f3!2sFlorida%20Eis%20Altstadt%20Spandau!5e0!3m2!1sen!2sus!4v1734819048513!5m2!1sen!2sus"
+    style={{ border: 0, width: "100%", height: "400px" }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+);
 
 export default GoogleMap;
