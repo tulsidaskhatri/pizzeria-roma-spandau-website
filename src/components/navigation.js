@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 export const Navigation = () => {
   return (
-    <nav className="bg-primary-1 container px-4 text-white">
+    <nav className="bg-primary-1 container px-12 text-white">
       <ul className="flex list-none gap-4">
         <NavItem href="/">Welcome!</NavItem>
         <NavItem href="/speisekarte">Food & Drink</NavItem>
