@@ -1,5 +1,5 @@
 export const OpeningTime = () => (
-  <section className="m-3 flex flex-col gap-3">
+  <section className="m-3 flex flex-col gap-12">
     <div className="flex flex-col gap-1 text-center">
       <h2 className="text-3xl font-bold text-action-2">
         Öffnungszeiten & Standort
@@ -12,6 +12,8 @@ export const OpeningTime = () => (
       <DaysTimes days="Friday - Saturday" times="10:00 - 00:00" />
       <DaysTimes days="Sunday" times="12:00 - 22:00" />
     </ul>
+
+    <hr className="border-black" />
   </section>
 );
 
