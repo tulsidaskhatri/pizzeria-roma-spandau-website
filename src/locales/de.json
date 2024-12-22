@@ -1,4 +1,10 @@
 {
   "welcome": "Willkommen in unserer Pizzeria!",
-  "menu": "Speisekarte"
+  "menu": "Speisekarte",
+  "nav": {
+    "links": {
+      "welcome": "Willkommen!",
+      "menu": "Speisen & Getränke"
+    }
+  }
 }
