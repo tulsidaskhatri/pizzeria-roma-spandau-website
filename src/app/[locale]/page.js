@@ -9,7 +9,7 @@ export default function Home() {
     <main className="container bg-white">
       <Hero />
       <OpeningTime />
-      {/* <GoogleMap /> */}
+      <GoogleMap />
       <Contact />
       <Credit />
     </main>
