@@ -9,7 +9,10 @@ export const Navigation = ({ locale }) => {
   return (
     <nav className="container bg-primary-1 px-6 text-white sm:px-12">
       <ul className="flex list-none gap-4">
-        <NavItem href={`/${locale}`} active={pathname === "/" || `/${locale}`}>
+        <NavItem
+          href={`/${locale}`}
+          active={pathname === "/" || pathname === `/${locale}`}
+        >
           {t.nav.links.welcome}
         </NavItem>
         <NavItem
