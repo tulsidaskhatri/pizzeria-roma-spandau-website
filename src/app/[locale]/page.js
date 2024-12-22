@@ -4,13 +4,14 @@ import GoogleMap from "@/components/google-map";
 import { Hero } from "@/components/hero";
 import { OpeningTime } from "@/components/opening-time";
 
-export default function Home() {
+export default async function Home({ params }) {
+  const { locale } = await params;
   return (
     <main className="container bg-white">
-      <Hero />
-      <OpeningTime />
+      <Hero locale={locale} />
+      <OpeningTime locale={locale} />
       <GoogleMap />
-      <Contact />
+      <Contact locale={locale} />
       <Credit />
     </main>
   );

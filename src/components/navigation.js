@@ -1,13 +1,15 @@
 "use client";
+import { tranlations } from "@/locales";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export const Navigation = () => {
+export const Navigation = ({ locale }) => {
+  const t = tranlations[locale];
   return (
-    <nav className="bg-primary-1 container px-6 text-white sm:px-12">
+    <nav className="container bg-primary-1 px-6 text-white sm:px-12">
       <ul className="flex list-none gap-4">
-        <NavItem href="/">Welcome!</NavItem>
-        <NavItem href="/speisekarte">Food & Drink</NavItem>
+        <NavItem href="/">{t.nav.links.welcome}</NavItem>
+        <NavItem href="/speisekarte">{t.nav.links.menu}</NavItem>
       </ul>
     </nav>
   );
@@ -27,7 +29,7 @@ const NavItem = ({ children, href }) => {
         {children}
       </Link>
 
-      {isActivePage ? <hr className="border-primary-2 border-b-2" /> : null}
+      {isActivePage ? <hr className="border-b-2 border-primary-2" /> : null}
     </li>
   );
 };

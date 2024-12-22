@@ -6,5 +6,30 @@
       "welcome": "Welcome",
       "menu": "Food & Drink"
     }
+  },
+  "home": {
+    "hero": {
+      "button": "Food & Drinks"
+    },
+    "timetable": {
+      "title": "Opening Hours & Location",
+      "days": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+      }
+    },
+    "address": {
+      "title": "Come by"
+    },
+    "contact": {
+      "title": "Call us",
+      "message1": "(For reservation requests",
+      "message2": "please note our opening hours)"
+    }
   }
 }

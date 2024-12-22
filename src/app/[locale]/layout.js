@@ -31,9 +31,9 @@ export default async function RootLayout({ children, params }) {
         style={{ backgroundImage: "url('/images/background.jpg')" }}
         className={`${geistSans.variable} ${geistMono.variable} bg-cover bg-fixed antialiased`}
       >
-        <Header />
+        <Header locale={locale} />
         {children}
-        <Footer />
+        <Footer locale={locale} />
       </body>
     </html>
   );

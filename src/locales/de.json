@@ -6,5 +6,30 @@
       "welcome": "Willkommen!",
       "menu": "Speisen & Getränke"
     }
+  },
+  "home": {
+    "hero": {
+      "button": "Speisen & Getränke"
+    },
+    "timetable": {
+      "title": "Öffnungszeiten & Standort",
+      "days": {
+        "monday": "Montag",
+        "tuesday": "Dienstag",
+        "wednesday": "Mittwoch",
+        "thursday": "Donnerstag",
+        "friday": "Freitag",
+        "saturday": "Samstag",
+        "sunday": "Sonntag"
+      }
+    },
+    "address": {
+      "title": "Kommen Sei vorbei"
+    },
+    "contact": {
+      "title": "Rufen Sei an",
+      "message1": "(Für Reservierungsanfragen beachten",
+      "message2": "Sie bitte unsere Öffnungszeiten)"
+    }
   }
 }
