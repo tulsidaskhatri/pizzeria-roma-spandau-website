@@ -1,5 +1,5 @@
 export const OpeningTime = () => (
-  <section className="flex flex-col gap-12 px-12 py-3">
+  <section className="flex flex-col gap-12 px-6 py-3 sm:px-12">
     <div className="flex flex-col gap-1 text-center">
       <h2 className="text-3xl font-bold text-action-2">
         Öffnungszeiten & Standort

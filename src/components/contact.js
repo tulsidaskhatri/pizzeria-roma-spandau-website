@@ -1,5 +1,5 @@
 export const Contact = () => (
-  <div className="bg-primary-1 xs:grid-cols-1 grid grid-cols-2 gap-8 px-12 py-8 text-center text-white">
+  <div className="bg-primary-1 grid grid-cols-1 gap-8 px-6 py-8 text-center text-white sm:grid-cols-2 sm:px-12">
     <Info title="Kommen Sie vorbei">
       <p>Breite Straße 56</p>
       <p>13597 Berlin | Spandau</p>
