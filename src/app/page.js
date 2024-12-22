@@ -1,3 +1,4 @@
+import { Contact } from "@/components/contact";
 import GoogleMap from "@/components/google-map";
 import { Hero } from "@/components/hero";
 import { OpeningTime } from "@/components/opening-time";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <OpeningTime />
       <GoogleMap />
+      <Contact />
     </main>
   );
 }
