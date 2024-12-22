@@ -1,17 +1,20 @@
-import { Contact } from "@/components/contact";
-import { Credit } from "@/components/credit";
-import GoogleMap from "@/components/google-map";
-import { Hero } from "@/components/hero";
-import { OpeningTime } from "@/components/opening-time";
+"use client";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      router.push("/de");
+    }
+  }, [router]);
   return (
-    <main className="container bg-white">
-      <Hero />
-      <OpeningTime />
-      <GoogleMap />
-      <Contact />
-      <Credit />
-    </main>
+    <html>
+      <body>
+        <p>Redirecting to /de</p>
+      </body>
+    </html>
   );
 }
