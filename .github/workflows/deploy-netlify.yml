@@ -3,7 +3,7 @@ name: Deploy to Netlify
 on:
   push:
     branches:
-      - dev
+      - dev # This triggers the workflow when changes are pushed to the dev branch
 
 jobs:
   deploy:
@@ -15,15 +15,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js
+      # Step 2: Set up Node.js environment with version 22
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "22" # Specify the Node.js version compatible with your project
+          node-version: "22" # Specify the Node.js version as 22
 
-      # Step 3: Install Yarn
+      # Step 3: Install Yarn globally
       - name: Install Yarn
         run: npm install --global yarn
+
+      - name: Install Netlify
+        run: npm install --global netlify-cli
 
       # Step 4: Install dependencies using Yarn
       - name: Install dependencies
@@ -35,9 +38,9 @@ jobs:
 
       # Step 6: Deploy to Netlify
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v2.0.0
-        with:
-          publish-dir: ./out # Adjust this to your build output directory
-          production-deploy: false # Set to false since this is a dev branch
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        id: netlify_deploy
+        run: |
+          netlify deploy --prod \
+            --dir out \
+            --site ${{ secrets.NETLIFY_SITE_ID }} \
+            --auth ${{ secrets.NETLIFY_AUTH_TOKEN }}
