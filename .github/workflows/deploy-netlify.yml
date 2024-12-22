@@ -15,11 +15,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js environment
+      # Step 2: Set up Node.js environment with version 22
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "22" # Specify the Node.js version compatible with your project
+          node-version: "22" # Specify the Node.js version as 22
 
       # Step 3: Install Yarn globally
       - name: Install Yarn
@@ -35,12 +35,10 @@ jobs:
 
       # Step 6: Deploy to Netlify
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v2.0.0
+        uses: nwtgck/actions-netlify@v3.0
         with:
           publish-dir: ./out # Make sure this matches your build output directory
           production-deploy: false # Set to false if deploying to a branch, true for production
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
