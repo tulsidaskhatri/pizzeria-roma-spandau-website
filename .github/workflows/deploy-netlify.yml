@@ -25,6 +25,9 @@ jobs:
       - name: Install Yarn
         run: npm install --global yarn
 
+      - name: Install Netlify
+        run: npm install --global netlify-cli
+
       # Step 4: Install dependencies using Yarn
       - name: Install dependencies
         run: yarn install
@@ -35,10 +38,9 @@ jobs:
 
       # Step 6: Deploy to Netlify
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v3.0
-        with:
-          publish-dir: ./out # Make sure this matches your build output directory
-          production-deploy: false # Set to false if deploying to a branch, true for production
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        id: netlify_deploy
+        run: |
+          netlify deploy \
+            --dir out \
+            --site ${{ secrets.NETLIFY_SITE_ID }} \
+            --auth ${{ secrets.NETLIFY_API_TOKEN }}
