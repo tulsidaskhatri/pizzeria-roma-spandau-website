@@ -46,10 +46,9 @@
         },
         "dishes": [
           {
-            "title": "1. Bruschetta",
+            "title": "1. Bruschetta (Aa)",
             "ingredients": "geröstete Brotscheiben mit frischen Tomaten, Knoblauch & Kräutern",
-            "price": "6,00 €",
-            "tags": "(Aa)"
+            "price": "6,00 €"
           },
           {
             "title": "2. Caprese (I)",
