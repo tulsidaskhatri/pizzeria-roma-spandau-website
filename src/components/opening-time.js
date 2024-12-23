@@ -12,14 +12,9 @@ export const OpeningTime = ({ locale }) => {
 
       <ul className="flex flex-col">
         <DaysTimes
-          days={`${days.monday} - ${days.thursday}`}
-          times="10:00 - 23:00"
+          days={`${days.monday} - ${days.sunday}`}
+          times="11:00 - 00:00"
         />
-        <DaysTimes
-          days={`${days.friday} - ${days.saturday}`}
-          times="10:00 - 00:00"
-        />
-        <DaysTimes days={days.sunday} times="12:00 - 22:00" />
       </ul>
 
       <hr className="border-black" />
