@@ -31,5 +31,23 @@
       "message1": "(For reservation requests",
       "message2": "please note our opening hours)"
     }
+  },
+  "menuPage": {
+    "title": "Food & Drinks",
+    "subtite": "Delicious drinks to hot dishes from the original Italian stone oven.",
+    "marketing1": "Get 20% DISCOUNT for self-pickup | Telephone pre-order at: 030 - 367 501 71",
+    "marketing2": "(not applicable to small portions & drinks)",
+    "categories": [
+      {
+        "title": "Dish Category Title",
+        "image": "",
+        "dishes": [
+          {
+            "title": "dish title",
+            "amount": "6.00"
+          }
+        ]
+      }
+    ]
   }
 }

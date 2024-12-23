@@ -31,5 +31,11 @@
       "message1": "(Für Reservierungsanfragen beachten",
       "message2": "Sie bitte unsere Öffnungszeiten)"
     }
+  },
+  "menuPage": {
+    "title": "Speisen & Getränke",
+    "subtite": "Leckere Getränke bis heiße Speisen aus dem original italienischen Steinofen.",
+    "marketing1": "Bei Selbstabholung bekommen Sie 20% RABATT | Telefonische Vorbestellung unter: 030 - 367 501 71",
+    "marketing2": "(nicht auf kleine Portionen & Getränke)"
   }
 }

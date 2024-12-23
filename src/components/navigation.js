@@ -1,10 +1,10 @@
 "use client";
-import { tranlations } from "@/locales";
+import { translations } from "@/locales";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export const Navigation = ({ locale }) => {
-  const t = tranlations[locale];
+  const t = translations[locale];
   const pathname = usePathname();
   return (
     <nav className="container bg-primary-1 px-6 text-white sm:px-12">

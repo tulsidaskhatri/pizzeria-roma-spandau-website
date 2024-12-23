@@ -1,8 +1,8 @@
-import { tranlations } from "@/locales";
+import { translations } from "@/locales";
 import Link from "next/link";
 
 export const Footer = ({ locale }) => {
-  const t = tranlations[locale];
+  const t = translations[locale];
   return (
     <footer className="bg-primary-1 py-8 text-xs text-white">
       <div className="container grid grid-cols-2 px-12 sm:grid-cols-5">

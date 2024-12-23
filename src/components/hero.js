@@ -1,8 +1,8 @@
 import { LinkButton } from "./link-button";
-import { tranlations } from "@/locales";
+import { translations } from "@/locales";
 
 export const Hero = ({ locale }) => {
-  const t = tranlations[locale];
+  const t = translations[locale];
   return (
     <div
       style={{

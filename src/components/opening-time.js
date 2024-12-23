@@ -1,7 +1,7 @@
-import { tranlations } from "@/locales";
+import { translations } from "@/locales";
 
 export const OpeningTime = ({ locale }) => {
-  const t = tranlations[locale];
+  const t = translations[locale];
   const { title, days } = t.home.timetable;
   return (
     <section className="flex flex-col gap-12 px-6 py-3 sm:px-12">
