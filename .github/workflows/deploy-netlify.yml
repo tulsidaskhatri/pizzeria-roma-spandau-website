@@ -21,20 +21,16 @@ jobs:
         with:
           node-version: "22" # Specify the Node.js version as 22
 
-      # Step 3: Install Yarn globally
-      - name: Install Yarn
-        run: npm install --global yarn
-
       - name: Install Netlify
         run: npm install --global netlify-cli
 
-      # Step 4: Install dependencies using Yarn
+      # Step 4: Install dependencies using npm
       - name: Install dependencies
-        run: yarn install
+        run: npm install
 
-      # Step 5: Build the project using Yarn
+      # Step 5: Build the project using npm
       - name: Build the project
-        run: yarn build
+        run: npm run build
 
       # Step 6: Deploy to Netlify
       - name: Deploy to Netlify
