@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { LinkButton } from "./link-button";
 import { tranlations } from "@/locales";
 
@@ -15,7 +14,9 @@ export const Hero = ({ locale }) => {
       }}
     >
       <div className="flex justify-center">
-        <LinkButton href="/speisekarte">{t.home.hero.button}</LinkButton>
+        <LinkButton href={`/${locale}/speisekarte`}>
+          {t.home.hero.button}
+        </LinkButton>
       </div>
     </div>
   );
