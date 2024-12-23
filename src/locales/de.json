@@ -36,6 +36,386 @@
     "title": "Speisen & Getränke",
     "subtitle": "Leckere Getränke bis heiße Speisen aus dem original italienischen Steinofen.",
     "marketing1": "Bei Selbstabholung bekommen Sie 20% RABATT | Telefonische Vorbestellung unter: 030 - 367 501 71",
-    "marketing2": "(nicht auf kleine Portionen & Getränke)"
+    "marketing2": "(nicht auf kleine Portionen & Getränke)",
+    "categories": [
+      {
+        "title": "ANTIPASTI - VORSPEISEN",
+        "image": {
+          "url": "/images/categories/starter.avif",
+          "alt": "starter photo"
+        },
+        "dishes": [
+          {
+            "title": "1. Bruschetta",
+            "ingredients": "geröstete Brotscheiben mit frischen Tomaten, Knoblauch & Kräutern",
+            "price": "6,00 €",
+            "tags": "(Aa)"
+          },
+          {
+            "title": "2. Caprese (I)",
+            "ingredients": "Mozzarella, frische Tomaten, Basilikum & Olivenöl",
+            "price": "10,50 €"
+          }
+        ]
+      },
+      {
+        "title": "INSALATA - SALATE",
+        "subtitle": "ALLE HAUSGEMACHTEN SALATE WERDEN MIT ESSIG, ÖL UND DRESSING SERVIERT!",
+        "image": {
+          "url": "/images/categories/salad.avif",
+          "alt": "salad photo"
+        },
+        "dishes": [
+          {
+            "title": "3. Insalata Mista",
+            "ingredients": "Insalata Mista",
+            "price": "9,00 €"
+          },
+          {
+            "title": "4. Insalata di Pollo",
+            "ingredients": "Insalata di Pollo Champignons",
+            "price": "12,00 €"
+          },
+          {
+            "title": "5. Insalata Tonno (F)",
+            "ingredients": "gemischter Salat mit Thunfisch und ein gekochtes Ei",
+            "price": "11,00 €"
+          },
+          {
+            "title": "6. Insalata Pecorino (I)",
+            "ingredients": "gemischter Salat mit Feta (Weichkäse)",
+            "price": "11,00 €"
+          },
+          {
+            "title": "7. Insalata di Rucola (I)",
+            "ingredients": "Rucolasalat mit Parmesan und Cherry",
+            "price": "11,00 €"
+          },
+          {
+            "title": "8. Insalata di Salmone",
+            "ingredients": "gemischter Salat mit Lachsfilet",
+            "price": "13,00 €"
+          }
+        ]
+      },
+      {
+        "title": "ZUPPE – SUPPEN",
+        "subtitle": "ALLE HAUSGEMACHTEN SUPPEN WERDEN MIT BROT SERVIERT",
+        "image": {
+          "url": "/images/categories/soup.avif",
+          "alt": "soup photo"
+        },
+        "dishes": [
+          {
+            "title": "9. Creme die Pomodoro (I)",
+            "ingredients": "Tomatencremesuppe",
+            "price": "8,00 €"
+          },
+          {
+            "title": "10. Minestrone (B)",
+            "ingredients": "Gemüsesuppe",
+            "price": "8,00 €"
+          }
+        ]
+      },
+      {
+        "title": "PASTA - NUDELGERICHTE",
+        "image": {
+          "url": "/images/categories/noodles.avif",
+          "alt": "noodles photo"
+        },
+        "dishes": [
+          {
+            "title": "11. Spaghetti Napoli (Aa, I, K)",
+            "ingredients": "Tomatensoße, Basilikum, Cherrytomaten mit Parmesan",
+            "price": "9,00 €"
+          },
+          {
+            "title": "12. Spaghetti al Pesto Genovese (Aa, I, K)",
+            "ingredients": "mit Basilikum-Pesto",
+            "price": "10,50 €"
+          },
+          {
+            "title": "13. Spaghetti Bolognese (16, Aa, I, K)",
+            "ingredients": "mit Rindfleischsoße und Parmesan",
+            "price": "10,00 €"
+          },
+          {
+            "title": "14. Spaghetti Carbonara (6, 9, Aa, I, K)",
+            "ingredients": "mit Putenschinken, Ei und Parmesan",
+            "price": "10,00 €"
+          },
+          {
+            "title": "15. Spaghetti Aglio olio e peperoncino (Aa, I, K)",
+            "ingredients": "mit Öl, Chili, Knoblauch und Parmesan",
+            "price": "9,50 €"
+          },
+          {
+            "title": "16. Spaghetti Frutti di Mare (Aa, C, F, I, K, L)",
+            "ingredients": "mit Meeresfrüchten, Knoblauch in Tomatensoße und Cherrytomaten",
+            "price": "13,50 €"
+          },
+          {
+            "title": "17. Spaghetti agli Scampi (Aa, C, I, K)",
+            "ingredients": "mit Großgarnelen, Krabben, Knoblauch und Cherrytomaten",
+            "price": "14,00 €"
+          },
+          {
+            "title": "18. Tagliatelle Rossini (Aa, I, K)",
+            "ingredients": "mit geschnetzeltes vom Kalb in Champignon-Sahnesoße",
+            "price": "13,00 €"
+          },
+          {
+            "title": "19. Tagliatelle al Salmone (Aa, I, K, F)",
+            "ingredients": "mit Lachs und Blattspinat in Hummer-Sahnesoße",
+            "price": "14,50 €"
+          },
+          {
+            "title": "20. Lasagne (3, 16, Aa, I, K)",
+            "ingredients": "geschichtete Blattnudeln mit Rindfleisch, Béchamelsoße und Käse",
+            "price": "11,50 €"
+          },
+          {
+            "title": "21. Regatoni alla Norma (Aa, I)",
+            "ingredients": "mit Auberginen, gesalzene Ricotta, Basilikum und Tomatensoße",
+            "price": "11,00 €"
+          },
+          {
+            "title": "22. Regatoni al forno (Aa, 16, I, K)",
+            "ingredients": "im Ofen mit Hähnchenbrustfilet, Brokkoli, Champignons in Tomaten-Sahnesoße mit Mozzarella überbacken",
+            "price": "12,00 €"
+          },
+          {
+            "title": "23. Regatoni all'Arrabiata (scharf) (Aa, 9, 12, 14, 17)",
+            "ingredients": "mit Oliven, Knoblauch, Petersilie und frischem Basilikum in Tomatensoße",
+            "price": "11,00 €"
+          },
+          {
+            "title": "24. Regatoni al Gorgonzola (Aa, K, I, 9, 14)",
+            "ingredients": "mit Spinat in Gorgonzola-Sahnesoße",
+            "price": "11,00 €"
+          },
+          {
+            "title": "25. Regatoni Pollo (Aa, K, I, 9, 14)",
+            "ingredients": "mit Brokkoli und geschnetzeltem vom Hähnchen in Champignon-Sahnesoße",
+            "price": "11,00 €"
+          },
+          {
+            "title": "26. Hähnchen in Champignon-Sahnesoße (3, Aa, I, K)",
+            "ingredients": "gefüllte Rohrnudeln mit Ricotta und Spinat überbacken",
+            "price": "12,00 €"
+          },
+          {
+            "title": "27. Cannelloni con filetto di salmone (Aa, I, K)",
+            "ingredients": "gefüllte Rohrnudeln mit Lachsfilet, Spinat und Hummer-Sahnesoße",
+            "price": "14,00 €"
+          },
+          {
+            "title": "28. Gnocchi al Gorgonzola (I,K)",
+            "ingredients": "Kartoffelnudeln mit Spinat in Gorgonzola-Sahnesoße",
+            "price": "11,00 €"
+          },
+          {
+            "title": "29. Gnocchi di salmone (F, I, K)",
+            "ingredients": "Kartoffelnudeln mit Lachsfilet und Zucchini in Hummer-Sahnesoße",
+            "price": "13,50 €"
+          },
+          {
+            "title": "30. Gnocchi alla Sorrentina (I, K)",
+            "ingredients": "Kartoffelnudeln mit Tomatensoße, Mozzarella und Basilikum",
+            "price": "11,00 €"
+          }
+        ]
+      },
+      {
+        "title": "RISO - REISGERICHTE",
+        "image": {
+          "url": "/images/categories/rice.avif",
+          "alt": "rice photo"
+        },
+        "dishes": [
+          {
+            "title": "31. Riso della Scoglio (C, F, L)",
+            "ingredients": "Reis mit Meeresfrüchten in Tomatensoße",
+            "price": "13,00 €"
+          },
+          {
+            "title": "32. Riso con Pollo (I, 9, 6, 14)",
+            "ingredients": "Reis mit geschnetzeltem vom Hähnchen und verschiedenen Gemüse in Curry-Sahnesoße",
+            "price": "11,00 €"
+          }
+        ]
+      },
+      {
+        "title": "CARNE - FLEISCHGERICHTE",
+        "subtitle": "ZU ALLEN HAUSGEMACHTEN FLEISCHGERICHTEN SERVIEREN WIR GEMISCHTEN SALAT MIT KROKETTEN ODER POMMES",
+        "image": {
+          "url": "/images/categories/meat.avif",
+          "alt": "meat photo"
+        },
+        "dishes": [
+          {
+            "title": "33. Pollo triturati ai Funghi (I)",
+            "ingredients": "Hähnchenbrustfilet in Champignon-Sahnesoße",
+            "price": "15,00 €"
+          },
+          {
+            "title": "34. Pollo alla griglia (Aa, I, 9, 14)",
+            "subtitle": "SCALOPPINA - KALBSMEDAILLONS",
+            "ingredients": "Hähnchenbrustfilet inklusive Kräuterbutter",
+            "price": "15,00 €"
+          },
+          {
+            "title": "35. Scaloppina ai Funghi (I)",
+            "ingredients": "Kalbsmedaillons in Champignon-Sahnesoße",
+            "price": "18,00 €"
+          },
+          {
+            "title": "36. Scaloppina al Gorgonzola (I)",
+            "ingredients": "Kalbsmedaillons in Gorgonzola-Sahnesoße",
+            "price": "18,00 €"
+          },
+          {
+            "title": "37. Scaloppina Sorentina (I)",
+            "ingredients": "Kalbsmedaillons in leichter Tomatensoße mit Mozzarella und Basilikum",
+            "price": "18,00 €"
+          },
+          {
+            "title": "38. Scaloppina al Pepe verde (I)",
+            "ingredients": "Kalbsmedaillons mit grüner Pfeffer-Sahnesoße",
+            "price": "18,00 €"
+          }
+        ]
+      },
+      {
+        "title": "PIZZE - PIZZEN 33 cm (Ø)",
+        "image": {
+          "url": "/images/categories/pizza.avif",
+          "alt": "pizza photo"
+        },
+        "dishes": [
+          {
+            "title": "39. Margherita (Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella",
+            "price": "8,50 €"
+          },
+          {
+            "title": "40. Salami (6, 9, Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, Rindersalami",
+            "price": "10,50 €"
+          },
+          {
+            "title": "41. Fresco Funghi (Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, frische Champignons",
+            "price": "10,50 €"
+          },
+          {
+            "title": "42. Spinaci e Gorgonzola (3, Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, Spinat und Gorgonzola",
+            "price": "11,00 €"
+          },
+          {
+            "title": "43. Broccoli e Gorgonzola (Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, Brokkoli und Gorgonzola",
+            "price": "11,00 €"
+          },
+          {
+            "title": "44. Vegetale (Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, verschiedenes, frisches Gemüse",
+            "price": "11,00 €"
+          },
+          {
+            "title": "45. Prosciutto (Aa, I, 16)",
+            "ingredients": "Tomatensoße, Mozzarella, Putenschinken und Oregano",
+            "price": "10,50 €"
+          },
+          {
+            "title": "46. Calzone (Aa, I, 16)",
+            "ingredients": "Gefalteter Pizzateig gefüllt mit Tomatensoße, Mozzarella, Champignons, Putenschinken und Rindersalami",
+            "price": "11,00 €"
+          },
+          {
+            "title": "47. Hawaii (Aa, I, 16)",
+            "ingredients": "Tomatensoße, Mozzarella, Putenschinken, Ananas und Oregano",
+            "price": "11,00 €"
+          },
+          {
+            "title": "48. Quattro Formaggi (Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, Parmesan, Schafskäse, Gorgonzola und Oregano",
+            "price": "12,00 €"
+          },
+          {
+            "title": "49. Quattro Stagioni (Aa, I, 16)",
+            "ingredients": "Tomatensoße, Mozzarella, Rindersalami, Putenschinken, Artischocken, Champignons",
+            "price": "12,00 €"
+          },
+          {
+            "title": "50. Salmone (Aa, F, I)",
+            "ingredients": "Tomatensoße, Mozzarella, Lachs, Blattspinat, Crème Fraîche, Oregano",
+            "price": "14,50 €"
+          },
+          {
+            "title": "51. Salsiccia all'aglio (Aa, I, 16)",
+            "ingredients": "Tomatensoße, Mozzarella, Knoblauchwurst vom Rind und Zwiebeln",
+            "price": "11,00 €"
+          },
+          {
+            "title": "52. Rucola Parmigiana (Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, Cherrytomaten, Rucola und Parmesan",
+            "price": "11,50 €"
+          },
+          {
+            "title": "53. El Pollo (Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, geschnetzeltem vom Hähnchen und Gemüse",
+            "price": "12,00 €"
+          },
+          {
+            "title": "54. El Pollo Spinat (Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, geschnetzeltem vom Hähnchen, Blattspinat und Crème Fraîche",
+            "price": "12,50 €"
+          },
+          {
+            "title": "55. Manzo (Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, Rindfleischstreifen, Champignons, Zwiebeln und Peperoni",
+            "price": "13,00 €"
+          },
+          {
+            "title": "56. Protein Pizza (Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, Rinderhackfleisch, Brokkoli, Mais und Paprika",
+            "price": "13,00 €"
+          },
+          {
+            "title": "57. Parma (Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, Rinderschinken, Rucola, Cherrytomaten, Parmesan",
+            "price": "14,00 €"
+          },
+          {
+            "title": "58. Focaccia (Aa)",
+            "ingredients": "Pizzabrot mit Olivenöl und Rosmarin",
+            "price": "6,00 €"
+          },
+          {
+            "title": "59. Scampia (Aa, C, I)",
+            "ingredients": "Tomatensoße, Mozzarella und Scampi",
+            "price": "14,00 €"
+          },
+          {
+            "title": "60. Frutti di Mare (Aa, C, F, I, L)",
+            "ingredients": "Tomatensoße, Mozzarella, Meeresfrüchte, Knoblauch",
+            "price": "14,00 €"
+          },
+          {
+            "title": "61. Tonno e cipolle (Aa, F, I)",
+            "ingredients": "Tomatensoße, Mozzarella, Thunfisch und Zwiebeln",
+            "price": "11,00 €"
+          },
+          {
+            "title": "62. Diavolo (6, 9, Aa, I)",
+            "ingredients": "Tomatensoße, Mozzarella, scharfe Rindersalami",
+            "price": "11,00 €"
+          }
+        ]
+      }
+    ]
   }
 }

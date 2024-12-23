@@ -1,7 +1,8 @@
+import { Menu } from "@/components/menu";
 import { translations } from "@/locales";
 
-const Spiesen = ({ params }) => {
-  const { locale } = params;
+export default async function Spiesen({ params }) {
+  const { locale } = await params;
   const t = translations[locale];
 
   return (
@@ -22,8 +23,11 @@ const Spiesen = ({ params }) => {
           <p className="text-xs text-green-600">{t.menuPage.marketing2}</p>
         </div>
       </div>
+
+      <div className="py-4">
+        <p>Menu starts here</p>
+        <Menu categories={t.menuPage.categories} />
+      </div>
     </main>
   );
-};
-
-export default Spiesen;
+}
