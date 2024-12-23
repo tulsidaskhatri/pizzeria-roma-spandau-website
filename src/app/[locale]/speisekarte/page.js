@@ -25,7 +25,6 @@ export default async function Spiesen({ params }) {
       </div>
 
       <div className="py-4">
-        <p>Menu starts here</p>
         <Menu categories={t.menuPage.categories} />
       </div>
     </main>

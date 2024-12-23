@@ -9,7 +9,7 @@ export const Footer = ({ locale }) => {
         <div>
           <p>Breite Straße 56</p>
           <p>13597 Berlin</p>
-          <p>030 - 36750171</p>
+          <p>030 - 286 495 67</p>
         </div>
         <nav className="flex flex-col gap-2">
           <Link href="/">{t.nav.links.welcome}</Link>

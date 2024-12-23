@@ -11,7 +11,7 @@ export const Contact = ({ locale }) => {
       </Info>
 
       <Info title={t.home.contact.title}>
-        <p>030 - 367 501 71</p>
+        <p>030 - 286 495 67</p>
         <p>{t.home.contact.message1}</p>
         <p>{t.home.contact.message2}</p>
       </Info>
