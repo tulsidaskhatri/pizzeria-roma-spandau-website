@@ -628,6 +628,188 @@
             "allergies": "(Aa, I, K)"
           }
         ]
+      },
+      {
+        "title": "Kalte Getränke",
+        "image": {
+          "url": "/images/categories/cold-drinks.jpg",
+          "alt": "cold drinks photo"
+        },
+        "options": [
+          {
+            "title": "Coca Cola (normal, zero)",
+            "key": "1 Coca Cola (normal, zero)",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Coca Cola (normal, zero)",
+            "key": "2 Coca Cola (normal, zero)",
+            "price": "3,50 €",
+            "quantity": "0,4 l"
+          },
+          {
+            "title": "Fanta",
+            "key": "1 Fanta",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Fanta",
+            "key": "2 Fanta",
+            "price": "3,50 €",
+            "quantity": "0,4 l"
+          },
+          {
+            "title": "Sprite",
+            "key": "1 Sprite",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Sprite",
+            "key": "2 Sprite",
+            "price": "3,50 €",
+            "quantity": "0,4 l"
+          },
+          {
+            "title": "Apfelschorle",
+            "key": "1 Apfelschorle",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Apfelschorle",
+            "key": "2 Apfelschorle",
+            "price": "3,50 €",
+            "quantity": "0,4 l"
+          },
+          {
+            "title": "Multivitamin",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Fuze Tea",
+            "key": "1 Fuze Tea",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Fuze Tea",
+            "key": "2 Fuze Tea",
+            "price": "3,50 €",
+            "quantity": "0,4 l"
+          },
+          {
+            "title": "Mineralwasser",
+            "key": "1 Mineralwasser",
+            "price": "2,00 €",
+            "quantity": "0,2 l"
+          },
+          {
+            "title": "Mineralwasser",
+            "key": "2 Mineralwasser",
+            "price": "5,00 €",
+            "quantity": "0,7 l"
+          },
+          {
+            "title": "Wasser ohne Kohlensäure",
+            "key": "1 Wasser ohne Kohlensäure",
+            "price": "2,00 €",
+            "quantity": "0,2 l"
+          },
+          {
+            "title": "Wasser ohne Kohlensäure",
+            "key": "2 Wasser ohne Kohlensäure",
+            "price": "5,00 €",
+            "quantity": "0,7 l"
+          },
+          {
+            "title": "Eisschokolade",
+            "price": "6,00 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "Eiscafé",
+            "price": "6,00 €"
+          }
+        ]
+      },
+      {
+        "title": "Kaffeespezialitäten je Sorte",
+        "image": {
+          "url": "/images/categories/coffee.jpg",
+          "alt": "coffee photo"
+        },
+        "options": [
+          {
+            "title": "Heiße Schokolade",
+            "price": "3,50 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "Kaffee schwarz",
+            "price": "2,00 €"
+          },
+          {
+            "title": "Espresso",
+            "price": "2,00 €"
+          },
+          {
+            "title": "Latte Macchiato",
+            "price": "3,50 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "Cappucchino",
+            "price": "3,50 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "Milchkaffee",
+            "price": "2,50 €",
+            "allergies": "(l)"
+          }
+        ]
+      },
+      {
+        "title": "Teespezialitäten je Sorte",
+        "image": {
+          "url": "/images/categories/tea.jpg",
+          "alt": "tea photo"
+        },
+        "options": [
+          {
+            "title": "Frischer Minztee / Schwarzer Tee",
+            "price": "2,00 €"
+          },
+          {
+            "title": "Ingwertee / Grüner Tee",
+            "price": "2,00 €"
+          },
+          {
+            "title": "Kräutertee / Kamillentee",
+            "price": "2,00 €"
+          },
+          {
+            "title": "Früchtetee",
+            "price": "2,00 €"
+          }
+        ]
+      },
+      {
+        "title": "Zusatzstoffe & Allergene",
+        "dishes": [
+          {
+            "title": "Zusatzstoffe",
+            "ingredients": "3. mit Farbstoff, 4. Koffeinhaltig, 6. mit Antidioxidationsmitteln, 7. mit Phosphat, 9. mit Konservierungsstoffen, 12. geschwärzt, 14. mit Geschmacksverstärker, 16. Hergestellt aus zerkleinerten Fleisch, 17. geschwefelt"
+          },
+          {
+            "title": "Allergene",
+            "ingredients": "Glutenhaltige Getreide/-erzeugnisse (a. Weizen, b. Roggen, c. Gerste, d. Hafer, e. Dinkel), B. Sellerie/ -erzeugnisse, C. Krebstiere/-erzeugnisse, F. Fisch/-erzeugnisse, I. Milch/-erzeugnisse (inkl. Laktose), J. Schalenfrüchte (Nüsse)-erzeugnisse, K. Eier/-erzeugnisse, L. Weichtiere/-erzeugnisse, M. Lupinen"
+          }
+        ]
       }
     ]
   }
