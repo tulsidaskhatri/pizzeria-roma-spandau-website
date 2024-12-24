@@ -17,7 +17,7 @@ export function Dishes({ category }) {
           key={dish.title}
           title={<TitleWithAmount title={dish.title} amount={dish.price} />}
           classname="w-full"
-          innerClassname="flex w-full py-2 px-4"
+          innerClassname="flex w-full py-2 px-4 items-center"
           outerClassname="border-b border-solid border-gray-700 last:border-b-0"
         >
           <div className="flex items-start gap-2 px-10 pb-4">

@@ -21,7 +21,7 @@ export function Menu({ categories }) {
             key={category.title}
             title={<p>{category.title}</p>}
             outerClassname="transition-all duration-300 border-b border-solid border-gray-600"
-            innerClassname="transition-all duration-300 flex gap-2 py-2 w-full text-left hover:bg-red-50 px-2"
+            innerClassname="transition-all items-center duration-300 flex gap-0 py-2 w-full text-left hover:bg-red-50 px-2"
             activeInnerClassname="rounded-t-xl"
             activeOuterClassname="bg-red-50 my-4 first:mt-0 shadow-2xl border border-gray-400 rounded-xl pb-2"
           >
@@ -47,6 +47,10 @@ function MenuImage({ category }) {
     return <></>;
   }
   return (
-    <img src={category.image.url} alt={category.image.url} className="p-4" />
+    <img
+      src={category.image.url}
+      alt={category.image.url}
+      className="px-4 pb-2 pt-1"
+    />
   );
 }
