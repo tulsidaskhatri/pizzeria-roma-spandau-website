@@ -2,12 +2,30 @@
 import { translations } from "@/locales";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export const Navigation = ({ locale }) => {
   const t = translations[locale];
   const pathname = usePathname();
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100); // Adjust scroll threshold as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="container bg-primary-1 px-6 text-white sm:px-12">
+    <nav
+      className={"container mt-16 w-full bg-primary-1 px-6 text-white sm:px-12"}
+    >
       <ul className="flex list-none gap-4">
         <NavItem
           href={`/${locale}`}
