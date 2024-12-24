@@ -39,7 +39,7 @@
     "marketing2": "(nicht auf kleine Portionen & Getränke)",
     "categories": [
       {
-        "title": "ANTIPASTI - VORSPEISEN",
+        "title": "Antipasti - Vorspeisen",
         "image": {
           "url": "/images/categories/starter.avif",
           "alt": "starter photo"
@@ -60,7 +60,7 @@
         ]
       },
       {
-        "title": "INSALATA - SALATE",
+        "title": "Insalata - Salate",
         "subtitle": "ALLE HAUSGEMACHTEN SALATE WERDEN MIT ESSIG, ÖL UND DRESSING SERVIERT!",
         "image": {
           "url": "/images/categories/salad.avif",
@@ -103,7 +103,7 @@
         ]
       },
       {
-        "title": "ZUPPE - SUPPEN",
+        "title": "Zuppe - Suppen",
         "subtitle": "ALLE HAUSGEMACHTEN SUPPEN WERDEN MIT BROT SERVIERT",
         "image": {
           "url": "/images/categories/soup.avif",
@@ -125,7 +125,7 @@
         ]
       },
       {
-        "title": "PASTA - NUDELGERICHTE",
+        "title": "Pasta - Nudelgerichte",
         "image": {
           "url": "/images/categories/noodles.avif",
           "alt": "noodles photo"
@@ -254,7 +254,7 @@
         ]
       },
       {
-        "title": "RISO - REISGERICHTE",
+        "title": "Riso - Reisgerichte",
         "image": {
           "url": "/images/categories/rice.avif",
           "alt": "rice photo"
@@ -275,7 +275,7 @@
         ]
       },
       {
-        "title": "CARNE - FLEISCHGERICHTE",
+        "title": "Carne - Fleischgerichte",
         "subtitle": "ZU ALLEN HAUSGEMACHTEN FLEISCHGERICHTEN SERVIEREN WIR GEMISCHTEN SALAT MIT KROKETTEN ODER POMMES",
         "image": {
           "url": "/images/categories/meat.avif",
@@ -322,7 +322,7 @@
         ]
       },
       {
-        "title": "PIZZE - PIZZEN 33 cm (Ø)",
+        "title": "Pizze - Pizzen 33 cm (Ø)",
         "image": {
           "url": "/images/categories/pizza.avif",
           "alt": "pizza photo"
@@ -609,7 +609,7 @@
         ]
       },
       {
-        "title": "DESSERT - Nachtisch",
+        "title": "Dessert - Nachtisch",
         "image": {
           "url": "/images/categories/dessert.avif",
           "alt": "dessert photo"
