@@ -16,8 +16,14 @@ export function Dishes({ category }) {
         <AccordionItem
           key={dish.title}
           title={<TitleWithAmount title={dish.title} amount={dish.price} />}
+          classname="w-full"
+          innerClassname="flex w-full py-2 px-4"
+          outerClassname="border-b border-solid border-gray-700 last:border-b-0"
         >
-          <p>{dish.ingredients}</p>
+          <div className="flex items-start gap-2 px-10 pb-4">
+            <p>{dish.ingredients}</p>
+            {dish.allergies && <p className="text-xs">{dish.allergies}</p>}
+          </div>
         </AccordionItem>
       ))}
     </Accordion>

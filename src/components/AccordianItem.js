@@ -2,9 +2,24 @@
 
 import { useRef, useEffect, useState } from "react";
 
-export const AccordionItem = ({ title, children, isOpen, onClick }) => {
+export const AccordionItem = ({
+  title,
+  children,
+  isOpen,
+  onClick,
+  outerClassname = "",
+  innerClassname = "",
+  activeOuterClassname = "",
+  activeInnerClassname = "",
+}) => {
   const contentRef = useRef(null);
   const [height, setHeight] = useState(0);
+  let outer = outerClassname;
+  let inner = innerClassname;
+  if (isOpen) {
+    outer = `${activeOuterClassname} ${outerClassname}`.trim();
+    inner = `${innerClassname} ${activeInnerClassname}`.trim();
+  }
 
   useEffect(() => {
     const currentRef = contentRef.current; // Capture the current value of the ref
@@ -34,11 +49,8 @@ export const AccordionItem = ({ title, children, isOpen, onClick }) => {
   }, [isOpen, children]);
 
   return (
-    <div className="mb-4 rounded-lg border border-gray-300">
-      <button
-        className="flex w-full items-center bg-gray-100 p-4 font-semibold hover:bg-gray-200 focus:outline-none"
-        onClick={onClick}
-      >
+    <div className={outer}>
+      <button className={inner} onClick={onClick}>
         <span
           className={`transform transition-transform duration-300 ${
             isOpen ? "rotate-90" : ""
@@ -54,9 +66,7 @@ export const AccordionItem = ({ title, children, isOpen, onClick }) => {
           maxHeight: `${height}px`,
         }}
       >
-        <div ref={contentRef} className="bg-white p-4">
-          {children}
-        </div>
+        <div ref={contentRef}>{children}</div>
       </div>
     </div>
   );

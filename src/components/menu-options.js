@@ -8,14 +8,20 @@ export function MenuOptions({ category }) {
     return <></>;
   }
   return (
-    <div className="grid grid-cols-2 gap-x-14">
+    <div className="grid grid-cols-2 gap-x-14 px-8">
       {category.options.map((option) => (
         <div
           key={option.key || option.title}
-          className="end flex justify-between border-b-2 border-gray-100 py-3 last:border-b-0"
+          className="flex justify-between border-b-2 border-gray-100 py-3 last:border-b-0"
         >
           <div className="flex gap-2">
-            <p>{option.title}</p>
+            <div className="flex items-start gap-1">
+              <p>{option.title}</p>
+              {option.allergies && (
+                <p className="text-xs">{option.allergies}</p>
+              )}
+            </div>
+
             {option.quantity && <p>{option.quantity}</p>}
           </div>
 
