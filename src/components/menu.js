@@ -2,6 +2,9 @@
 import { useState, useEffect } from "react";
 import { Accordion } from "./Accordian";
 import { AccordionItem } from "./AccordianItem";
+import { Dishes } from "./menu-dishes";
+import { TitleWithAmount } from "./title-with-amount";
+import { MenuOptions } from "./menu-options";
 
 export function Menu({ categories }) {
   const [isClient, setIsClient] = useState(false);
@@ -20,19 +23,9 @@ export function Menu({ categories }) {
             title={<TitleWithAmount title={category.title} />}
           >
             <div>
-              <img src={category.image.url} alt={category.image.url} />
-              <Accordion>
-                {category.dishes.map((dish) => (
-                  <AccordionItem
-                    key={dish.title}
-                    title={
-                      <TitleWithAmount title={dish.title} amount={dish.price} />
-                    }
-                  >
-                    <p>{dish.ingredients}</p>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+              <MenuImage category={category} />
+              <Dishes category={category} />
+              <MenuOptions category={category} />
             </div>
           </AccordionItem>
         ))}
@@ -41,9 +34,16 @@ export function Menu({ categories }) {
   );
 }
 
-const TitleWithAmount = ({ title, amount }) => (
-  <div className="flex justify-between">
-    <p>{title}</p>
-    <p>{amount}</p>
-  </div>
-);
+function MenuImage({ category }) {
+  if (
+    category == null ||
+    category.image == null ||
+    category.image.url == null ||
+    category.image.alt == null
+  ) {
+    return <></>;
+  }
+  return (
+    <img src={category.image.url} alt={category.image.url} className="pb-4" />
+  );
+}
