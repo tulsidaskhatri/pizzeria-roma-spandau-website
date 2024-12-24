@@ -13,6 +13,7 @@
     },
     "timetable": {
       "title": "Opening Hours & Location",
+      "week": "Open all week",
       "days": {
         "monday": "Monday",
         "tuesday": "Tuesday",
@@ -39,12 +40,775 @@
     "marketing2": "(not applicable to small portions & drinks)",
     "categories": [
       {
-        "title": "Dish Category Title",
-        "image": "",
+        "title": "Antipasti - Vorspeisen",
+        "image": {
+          "url": "/images/categories/starter.avif",
+          "alt": "starter photo"
+        },
         "dishes": [
           {
-            "title": "dish title",
-            "amount": "6.00"
+            "title": "1. Bruschetta",
+            "ingredients": "geröstete Brotscheiben mit frischen Tomaten, Knoblauch & Kräutern",
+            "price": "6,00 €",
+            "allergies": "(Aa)"
+          },
+          {
+            "title": "2. Caprese",
+            "ingredients": "Mozzarella, frische Tomaten, Basilikum & Olivenöl",
+            "price": "10,50 €",
+            "allergies": "(I)"
+          }
+        ]
+      },
+      {
+        "title": "Insalata - Salate",
+        "subtitle": "ALLE HAUSGEMACHTEN SALATE WERDEN MIT ESSIG, ÖL UND DRESSING SERVIERT!",
+        "image": {
+          "url": "/images/categories/salad.avif",
+          "alt": "salad photo"
+        },
+        "dishes": [
+          {
+            "title": "3. Insalata Mista",
+            "ingredients": "Insalata Mista",
+            "price": "9,00 €"
+          },
+          {
+            "title": "4. Insalata di Pollo",
+            "ingredients": "Insalata di Pollo Champignons",
+            "price": "12,00 €"
+          },
+          {
+            "title": "5. Insalata Tonno",
+            "ingredients": "gemischter Salat mit Thunfisch und ein gekochtes Ei",
+            "price": "11,00 €",
+            "allergies": "(F)"
+          },
+          {
+            "title": "6. Insalata Pecorino",
+            "ingredients": "gemischter Salat mit Feta (Weichkäse)",
+            "price": "11,00 €",
+            "allergies": "(I)"
+          },
+          {
+            "title": "7. Insalata di Rucola",
+            "ingredients": "Rucolasalat mit Parmesan und Cherry",
+            "price": "11,00 €",
+            "allergies": "(I)"
+          },
+          {
+            "title": "8. Insalata di Salmone",
+            "ingredients": "gemischter Salat mit Lachsfilet",
+            "price": "13,00 €"
+          }
+        ]
+      },
+      {
+        "title": "Zuppe - Suppen",
+        "subtitle": "ALLE HAUSGEMACHTEN SUPPEN WERDEN MIT BROT SERVIERT",
+        "image": {
+          "url": "/images/categories/soup.avif",
+          "alt": "soup photo"
+        },
+        "dishes": [
+          {
+            "title": "9. Creme die Pomodoro",
+            "ingredients": "Tomatencremesuppe",
+            "price": "8,00 €",
+            "allergies": "(I)"
+          },
+          {
+            "title": "10. Minestrone",
+            "ingredients": "Gemüsesuppe",
+            "price": "8,00 €",
+            "allergies": "(B)"
+          }
+        ]
+      },
+      {
+        "title": "Pasta - Nudelgerichte",
+        "image": {
+          "url": "/images/categories/noodles.avif",
+          "alt": "noodles photo"
+        },
+        "dishes": [
+          {
+            "title": "11. Spaghetti Napoli",
+            "ingredients": "Tomatensoße, Basilikum, Cherrytomaten mit Parmesan",
+            "price": "9,00 €",
+            "allergies": "(Aa, I, K)"
+          },
+          {
+            "title": "12. Spaghetti al Pesto Genovese",
+            "ingredients": "mit Basilikum-Pesto",
+            "price": "10,50 €",
+            "allergies": "(Aa, I, K)"
+          },
+          {
+            "title": "13. Spaghetti Bolognese",
+            "ingredients": "mit Rindfleischsoße und Parmesan",
+            "price": "10,00 €",
+            "allergies": "(16, Aa, I, K)"
+          },
+          {
+            "title": "14. Spaghetti Carbonara",
+            "ingredients": "mit Putenschinken, Ei und Parmesan",
+            "price": "10,00 €",
+            "allergies": "(6, 9, Aa, I, K)"
+          },
+          {
+            "title": "15. Spaghetti Aglio olio e peperoncino",
+            "ingredients": "mit Öl, Chili, Knoblauch und Parmesan",
+            "price": "9,50 €",
+            "allergies": "(Aa, I, K)"
+          },
+          {
+            "title": "16. Spaghetti Frutti di Mare",
+            "ingredients": "mit Meeresfrüchten, Knoblauch in Tomatensoße und Cherrytomaten",
+            "price": "13,50 €",
+            "allergies": "(Aa, C, F, I, K, L)"
+          },
+          {
+            "title": "17. Spaghetti agli Scampi",
+            "ingredients": "mit Großgarnelen, Krabben, Knoblauch und Cherrytomaten",
+            "price": "14,00 €",
+            "allergies": "(Aa, C, I, K)"
+          },
+          {
+            "title": "18. Tagliatelle Rossini",
+            "ingredients": "mit geschnetzeltes vom Kalb in Champignon-Sahnesoße",
+            "price": "13,00 €",
+            "allergies": "(Aa, I, K)"
+          },
+          {
+            "title": "19. Tagliatelle al Salmone",
+            "ingredients": "mit Lachs und Blattspinat in Hummer-Sahnesoße",
+            "price": "14,50 €",
+            "allergies": "(Aa, I, K, F)"
+          },
+          {
+            "title": "20. Lasagne",
+            "ingredients": "geschichtete Blattnudeln mit Rindfleisch, Béchamelsoße und Käse",
+            "price": "11,50 €",
+            "allergies": "(3, 16, Aa, I, K)"
+          },
+          {
+            "title": "21. Regatoni alla Norma",
+            "ingredients": "mit Auberginen, gesalzene Ricotta, Basilikum und Tomatensoße",
+            "price": "11,00 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "22. Regatoni al forno",
+            "ingredients": "im Ofen mit Hähnchenbrustfilet, Brokkoli, Champignons in Tomaten-Sahnesoße mit Mozzarella überbacken",
+            "price": "12,00 €",
+            "allergies": "(Aa, 16, I, K)"
+          },
+          {
+            "title": "23. Regatoni all'Arrabiata (scharf)",
+            "ingredients": "mit Oliven, Knoblauch, Petersilie und frischem Basilikum in Tomatensoße",
+            "price": "11,00 €",
+            "allergies": "(Aa, 9, 12, 14, 17)"
+          },
+          {
+            "title": "24. Regatoni al Gorgonzola",
+            "ingredients": "mit Spinat in Gorgonzola-Sahnesoße",
+            "price": "11,00 €",
+            "allergies": "(Aa, K, I, 9, 14)"
+          },
+          {
+            "title": "25. Regatoni Pollo",
+            "ingredients": "mit Brokkoli und geschnetzeltem vom Hähnchen in Champignon-Sahnesoße",
+            "price": "11,00 €",
+            "allergies": "(Aa, K, I, 9, 14)"
+          },
+          {
+            "title": "26. Hähnchen in Champignon-Sahnesoße",
+            "ingredients": "gefüllte Rohrnudeln mit Ricotta und Spinat überbacken",
+            "price": "12,00 €",
+            "allergies": "(3, Aa, I, K)"
+          },
+          {
+            "title": "27. Cannelloni con filetto di salmone",
+            "ingredients": "gefüllte Rohrnudeln mit Lachsfilet, Spinat und Hummer-Sahnesoße",
+            "price": "14,00 €",
+            "allergies": "(Aa, I, K)"
+          },
+          {
+            "title": "28. Gnocchi al Gorgonzola",
+            "ingredients": "Kartoffelnudeln mit Spinat in Gorgonzola-Sahnesoße",
+            "price": "11,00 €",
+            "allergies": "(I, K)"
+          },
+          {
+            "title": "29. Gnocchi di salmone",
+            "ingredients": "Kartoffelnudeln mit Lachsfilet und Zucchini in Hummer-Sahnesoße",
+            "price": "13,50 €",
+            "allergies": "(F, I, K)"
+          },
+          {
+            "title": "30. Gnocchi alla Sorrentina",
+            "ingredients": "Kartoffelnudeln mit Tomatensoße, Mozzarella und Basilikum",
+            "price": "11,00 €",
+            "allergies": "(I, K)"
+          }
+        ]
+      },
+      {
+        "title": "Riso - Reisgerichte",
+        "image": {
+          "url": "/images/categories/rice.avif",
+          "alt": "rice photo"
+        },
+        "dishes": [
+          {
+            "title": "31. Riso della Scoglio",
+            "ingredients": "Reis mit Meeresfrüchten in Tomatensoße",
+            "price": "13,00 €",
+            "allergies": "(C, F, L)"
+          },
+          {
+            "title": "32. Riso con Pollo",
+            "ingredients": "Reis mit geschnetzeltem vom Hähnchen und verschiedenen Gemüse in Curry-Sahnesoße",
+            "price": "11,00 €",
+            "allergies": "(I, 9, 6, 14)"
+          }
+        ]
+      },
+      {
+        "title": "Carne - Fleischgerichte",
+        "subtitle": "ZU ALLEN HAUSGEMACHTEN FLEISCHGERICHTEN SERVIEREN WIR GEMISCHTEN SALAT MIT KROKETTEN ODER POMMES",
+        "image": {
+          "url": "/images/categories/meat.avif",
+          "alt": "meat photo"
+        },
+        "dishes": [
+          {
+            "title": "33. Pollo triturati ai Funghi",
+            "ingredients": "Hähnchenbrustfilet in Champignon-Sahnesoße",
+            "price": "15,00 €",
+            "allergies": "(I)"
+          },
+          {
+            "title": "34. Pollo alla griglia",
+            "subtitle": "SCALOPPINA - KALBSMEDAILLONS",
+            "ingredients": "Hähnchenbrustfilet inklusive Kräuterbutter",
+            "price": "15,00 €",
+            "allergies": "(Aa, I, 9, 14)"
+          },
+          {
+            "title": "35. Scaloppina ai Funghi",
+            "ingredients": "Kalbsmedaillons in Champignon-Sahnesoße",
+            "price": "18,00 €",
+            "allergies": "(I)"
+          },
+          {
+            "title": "36. Scaloppina al Gorgonzola",
+            "ingredients": "Kalbsmedaillons in Gorgonzola-Sahnesoße",
+            "price": "18,00 €",
+            "allergies": "(I)"
+          },
+          {
+            "title": "37. Scaloppina Sorentina",
+            "ingredients": "Kalbsmedaillons in leichter Tomatensoße mit Mozzarella und Basilikum",
+            "price": "18,00 €",
+            "allergies": "(I)"
+          },
+          {
+            "title": "38. Scaloppina al Pepe verde",
+            "ingredients": "Kalbsmedaillons mit grüner Pfeffer-Sahnesoße",
+            "price": "18,00 €",
+            "allergies": "(I)"
+          }
+        ]
+      },
+      {
+        "title": "Pizze - Pizzen 33 cm (Ø)",
+        "image": {
+          "url": "/images/categories/pizza.avif",
+          "alt": "pizza photo"
+        },
+        "dishes": [
+          {
+            "title": "39. Margherita",
+            "ingredients": "Tomatensoße, Mozzarella",
+            "price": "8,50 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "40. Salami",
+            "ingredients": "Tomatensoße, Mozzarella, Rindersalami",
+            "price": "10,50 €",
+            "allergies": "(6, 9, Aa, I)"
+          },
+          {
+            "title": "41. Fresco Funghi",
+            "ingredients": "Tomatensoße, Mozzarella, frische Champignons",
+            "price": "10,50 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "42. Spinaci e Gorgonzola",
+            "ingredients": "Tomatensoße, Mozzarella, Spinat und Gorgonzola",
+            "price": "11,00 €",
+            "allergies": "(3, Aa, I)"
+          },
+          {
+            "title": "43. Broccoli e Gorgonzola",
+            "ingredients": "Tomatensoße, Mozzarella, Brokkoli und Gorgonzola",
+            "price": "11,00 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "44. Vegetale",
+            "ingredients": "Tomatensoße, Mozzarella, verschiedenes, frisches Gemüse",
+            "price": "11,00 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "45. Prosciutto",
+            "ingredients": "Tomatensoße, Mozzarella, Putenschinken und Oregano",
+            "price": "10,50 €",
+            "allergies": "(Aa, I, 16)"
+          },
+          {
+            "title": "46. Calzone",
+            "ingredients": "Gefalteter Pizzateig gefüllt mit Tomatensoße, Mozzarella, Champignons, Putenschinken und Rindersalami",
+            "price": "11,00 €",
+            "allergies": "(Aa, I, 16)"
+          },
+          {
+            "title": "47. Hawaii",
+            "ingredients": "Tomatensoße, Mozzarella, Putenschinken, Ananas und Oregano",
+            "price": "11,00 €",
+            "allergies": "(Aa, I, 16)"
+          },
+          {
+            "title": "48. Quattro Formaggi",
+            "ingredients": "Tomatensoße, Mozzarella, Parmesan, Schafskäse, Gorgonzola und Oregano",
+            "price": "12,00 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "49. Quattro Stagioni",
+            "ingredients": "Tomatensoße, Mozzarella, Rindersalami, Putenschinken, Artischocken, Champignons",
+            "price": "12,00 €",
+            "allergies": "(Aa, I, 16)"
+          },
+          {
+            "title": "50. Salmone",
+            "ingredients": "Tomatensoße, Mozzarella, Lachs, Blattspinat, Crème Fraîche, Oregano",
+            "price": "14,50 €",
+            "allergies": "(Aa, F, I)"
+          },
+          {
+            "title": "51. Salsiccia all'aglio",
+            "ingredients": "Tomatensoße, Mozzarella, Knoblauchwurst vom Rind und Zwiebeln",
+            "price": "11,00 €",
+            "allergies": "(Aa, I, 16)"
+          },
+          {
+            "title": "52. Rucola Parmigiana",
+            "ingredients": "Tomatensoße, Mozzarella, Cherrytomaten, Rucola und Parmesan",
+            "price": "11,50 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "53. El Pollo",
+            "ingredients": "Tomatensoße, Mozzarella, geschnetzeltem vom Hähnchen und Gemüse",
+            "price": "12,00 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "54. El Pollo Spinat",
+            "ingredients": "Tomatensoße, Mozzarella, geschnetzeltem vom Hähnchen, Blattspinat und Crème Fraîche",
+            "price": "12,50 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "55. Manzo",
+            "ingredients": "Tomatensoße, Mozzarella, Rindfleischstreifen, Champignons, Zwiebeln und Peperoni",
+            "price": "13,00 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "56. Protein Pizza",
+            "ingredients": "Tomatensoße, Mozzarella, Rinderhackfleisch, Brokkoli, Mais und Paprika",
+            "price": "13,00 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "57. Parma",
+            "ingredients": "Tomatensoße, Mozzarella, Rinderschinken, Rucola, Cherrytomaten, Parmesan",
+            "price": "14,00 €",
+            "allergies": "(Aa, I)"
+          },
+          {
+            "title": "58. Focaccia",
+            "ingredients": "Pizzabrot mit Olivenöl und Rosmarin",
+            "price": "6,00 €",
+            "allergies": "(Aa)"
+          },
+          {
+            "title": "59. Scampia",
+            "ingredients": "Tomatensoße, Mozzarella und Scampi",
+            "price": "14,00 €",
+            "allergies": "(Aa, C, I)"
+          },
+          {
+            "title": "60. Frutti di Mare",
+            "ingredients": "Tomatensoße, Mozzarella, Meeresfrüchte, Knoblauch",
+            "price": "14,00 €",
+            "allergies": "(Aa, C, F, I, L)"
+          },
+          {
+            "title": "61. Tonno e cipolle",
+            "ingredients": "Tomatensoße, Mozzarella, Thunfisch und Zwiebeln",
+            "price": "11,00 €",
+            "allergies": "(Aa, F, I)"
+          },
+          {
+            "title": "62. Diavolo",
+            "ingredients": "Tomatensoße, Mozzarella, scharfe Rindersalami",
+            "price": "11,00 €",
+            "allergies": "(6, 9, Aa, I)"
+          }
+        ]
+      },
+      {
+        "title": "Extras für Pizzen",
+        "image": {
+          "url": "/images/categories/pizza-extras.jpg",
+          "alt": "pizza photo"
+        },
+        "options": [
+          {
+            "title": "1. Rindersalami",
+            "price": "2,00 €",
+            "allergies": "(6,9)"
+          },
+          {
+            "title": "2. Salmone / Lachs",
+            "price": "3,50 €"
+          },
+          {
+            "title": "3. Ananas",
+            "price": "2,00 €"
+          },
+          {
+            "title": "4. Artischocken",
+            "price": "2,00 €"
+          },
+          {
+            "title": "5. Brokkoli",
+            "price": "2,00 €"
+          },
+          {
+            "title": "6. Champignons",
+            "price": "2,00 €"
+          },
+          {
+            "title": "7. Cherrytomaten",
+            "price": "2,00 €"
+          },
+          {
+            "title": "9. Kapern",
+            "price": "2,00 €"
+          },
+          {
+            "title": "10. Mais",
+            "price": "2,00 €"
+          },
+          {
+            "title": "11. Oliven",
+            "price": "2,00 €"
+          },
+          {
+            "title": "12. Paprika",
+            "price": "2,00 €"
+          },
+          {
+            "title": "14. Zucchini",
+            "price": "2,00 €"
+          },
+          {
+            "title": "15. Zwiebeln",
+            "price": "2,00 €"
+          },
+          {
+            "title": "16. Gorgonzola",
+            "price": "2,00 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "17. Mozzarella",
+            "price": "2,00 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "18. Parmesan",
+            "price": "2,50 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "19. Rucola",
+            "price": "2,00 €"
+          },
+          {
+            "title": "20. Sardellen",
+            "price": "2,50 €"
+          },
+          {
+            "title": "21. Schafskäse",
+            "price": "2,00 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "22. Spinat",
+            "price": "2,00 €"
+          },
+          {
+            "title": "23. Thunfisch",
+            "price": "2,00 €"
+          },
+          {
+            "title": "24. Garnelen",
+            "price": "4,00 €"
+          },
+          {
+            "title": "25. Hähnchenbruststreifen",
+            "price": "3,00 €"
+          }
+        ]
+      },
+      {
+        "title": "Frittate - Omelette",
+        "image": {
+          "url": "/images/categories/omelette.avif",
+          "alt": "omelette photo"
+        },
+        "subtitle": "ZU ALLEN OMELETTES WIRD EIN KLEINER SALAT UND BROT SERVIERT",
+        "dishes": [
+          {
+            "title": "62. Omelette con Verdura",
+            "ingredients": "mit Gemüse",
+            "price": "9,50 €",
+            "allergies": "(K)"
+          },
+          {
+            "title": "63. Omelette ai Formaggi",
+            "ingredients": "mit Käse",
+            "price": "9,50 €",
+            "allergies": "(K)"
+          },
+          {
+            "title": "64. Omelette con Salsiccia all'aglio",
+            "ingredients": "mit Knoblauchwurst",
+            "price": "9,50 €",
+            "allergies": "(K)"
+          }
+        ]
+      },
+      {
+        "title": "Dessert - Nachtisch",
+        "image": {
+          "url": "/images/categories/dessert.avif",
+          "alt": "dessert photo"
+        },
+        "dishes": [
+          {
+            "title": "65. Tiramisu hausgemacht",
+            "ingredients": "geschichteter Löffelbiskuit (in Espresso getränkt) mit einer Creme aus Mascarpone und Eigelb",
+            "price": "6,00 €",
+            "allergies": "(3, 4, Aa, I, Ja, K)"
+          },
+          {
+            "title": "66. Soufflé ai cioccolato",
+            "ingredients": "Schokokuchen mit flüssigen Kern (Schoko) und Schlagsahne",
+            "price": "7,00 €",
+            "allergies": "(Aa, I, K)"
+          }
+        ]
+      },
+      {
+        "title": "Kalte Getränke",
+        "image": {
+          "url": "/images/categories/cold-drinks.jpg",
+          "alt": "cold drinks photo"
+        },
+        "options": [
+          {
+            "title": "Coca Cola (normal, zero)",
+            "key": "1 Coca Cola (normal, zero)",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Coca Cola (normal, zero)",
+            "key": "2 Coca Cola (normal, zero)",
+            "price": "3,50 €",
+            "quantity": "0,4 l"
+          },
+          {
+            "title": "Fanta",
+            "key": "1 Fanta",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Fanta",
+            "key": "2 Fanta",
+            "price": "3,50 €",
+            "quantity": "0,4 l"
+          },
+          {
+            "title": "Sprite",
+            "key": "1 Sprite",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Sprite",
+            "key": "2 Sprite",
+            "price": "3,50 €",
+            "quantity": "0,4 l"
+          },
+          {
+            "title": "Apfelschorle",
+            "key": "1 Apfelschorle",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Apfelschorle",
+            "key": "2 Apfelschorle",
+            "price": "3,50 €",
+            "quantity": "0,4 l"
+          },
+          {
+            "title": "Multivitamin",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Fuze Tea",
+            "key": "1 Fuze Tea",
+            "price": "3,00 €",
+            "quantity": "0,3 l"
+          },
+          {
+            "title": "Fuze Tea",
+            "key": "2 Fuze Tea",
+            "price": "3,50 €",
+            "quantity": "0,4 l"
+          },
+          {
+            "title": "Mineralwasser",
+            "key": "1 Mineralwasser",
+            "price": "2,00 €",
+            "quantity": "0,2 l"
+          },
+          {
+            "title": "Mineralwasser",
+            "key": "2 Mineralwasser",
+            "price": "5,00 €",
+            "quantity": "0,7 l"
+          },
+          {
+            "title": "Wasser ohne Kohlensäure",
+            "key": "1 Wasser ohne Kohlensäure",
+            "price": "2,00 €",
+            "quantity": "0,2 l"
+          },
+          {
+            "title": "Wasser ohne Kohlensäure",
+            "key": "2 Wasser ohne Kohlensäure",
+            "price": "5,00 €",
+            "quantity": "0,7 l"
+          },
+          {
+            "title": "Eisschokolade",
+            "price": "6,00 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "Eiscafé",
+            "price": "6,00 €"
+          }
+        ]
+      },
+      {
+        "title": "Kaffeespezialitäten je Sorte",
+        "image": {
+          "url": "/images/categories/coffee.jpg",
+          "alt": "coffee photo"
+        },
+        "options": [
+          {
+            "title": "Heiße Schokolade",
+            "price": "3,50 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "Kaffee schwarz",
+            "price": "2,00 €"
+          },
+          {
+            "title": "Espresso",
+            "price": "2,00 €"
+          },
+          {
+            "title": "Latte Macchiato",
+            "price": "3,50 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "Cappucchino",
+            "price": "3,50 €",
+            "allergies": "(l)"
+          },
+          {
+            "title": "Milchkaffee",
+            "price": "2,50 €",
+            "allergies": "(l)"
+          }
+        ]
+      },
+      {
+        "title": "Teespezialitäten je Sorte",
+        "image": {
+          "url": "/images/categories/tea.jpg",
+          "alt": "tea photo"
+        },
+        "options": [
+          {
+            "title": "Frischer Minztee / Schwarzer Tee",
+            "price": "2,00 €"
+          },
+          {
+            "title": "Ingwertee / Grüner Tee",
+            "price": "2,00 €"
+          },
+          {
+            "title": "Kräutertee / Kamillentee",
+            "price": "2,00 €"
+          },
+          {
+            "title": "Früchtetee",
+            "price": "2,00 €"
+          }
+        ]
+      },
+      {
+        "title": "Zusatzstoffe & Allergene",
+        "dishes": [
+          {
+            "title": "Zusatzstoffe",
+            "ingredients": "3. mit Farbstoff, 4. Koffeinhaltig, 6. mit Antidioxidationsmitteln, 7. mit Phosphat, 9. mit Konservierungsstoffen, 12. geschwärzt, 14. mit Geschmacksverstärker, 16. Hergestellt aus zerkleinerten Fleisch, 17. geschwefelt"
+          },
+          {
+            "title": "Allergene",
+            "ingredients": "Glutenhaltige Getreide/-erzeugnisse (a. Weizen, b. Roggen, c. Gerste, d. Hafer, e. Dinkel), B. Sellerie/ -erzeugnisse, C. Krebstiere/-erzeugnisse, F. Fisch/-erzeugnisse, I. Milch/-erzeugnisse (inkl. Laktose), J. Schalenfrüchte (Nüsse)-erzeugnisse, K. Eier/-erzeugnisse, L. Weichtiere/-erzeugnisse, M. Lupinen"
           }
         ]
       }

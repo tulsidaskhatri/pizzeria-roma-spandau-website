@@ -13,6 +13,7 @@
     },
     "timetable": {
       "title": "Öffnungszeiten & Standort",
+      "week": "Die ganze Woche geöffnet",
       "days": {
         "monday": "Montag",
         "tuesday": "Dienstag",

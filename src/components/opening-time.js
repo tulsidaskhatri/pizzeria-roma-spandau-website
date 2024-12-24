@@ -2,7 +2,7 @@ import { translations } from "@/locales";
 
 export const OpeningTime = ({ locale }) => {
   const t = translations[locale];
-  const { title, days } = t.home.timetable;
+  const { title, days, week } = t.home.timetable;
   return (
     <section className="flex flex-col gap-12 px-6 py-3 sm:px-12">
       <div className="flex flex-col gap-1 text-center">
@@ -11,10 +11,7 @@ export const OpeningTime = ({ locale }) => {
       </div>
 
       <ul className="flex flex-col">
-        <DaysTimes
-          days={`${days.monday} - ${days.sunday}`}
-          times="11:00 - 00:00"
-        />
+        <DaysTimes days={`${week}`} times="11:00 - 00:00" />
       </ul>
 
       <hr className="border-black" />

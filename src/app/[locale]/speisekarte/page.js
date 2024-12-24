@@ -6,7 +6,7 @@ export default async function Spiesen({ params }) {
   const t = translations[locale];
 
   return (
-    <main className="container bg-white p-10">
+    <main className="container bg-white p-4 sm:p-10">
       <img
         src="/images/steinhof-pizza.jpg"
         alt="Steinhof Pizza"
