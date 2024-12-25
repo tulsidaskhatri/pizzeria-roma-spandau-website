@@ -29,13 +29,20 @@ export const Navigation = ({ locale }) => {
       <ul className="flex list-none gap-4">
         <NavItem
           href={`/${locale}`}
-          active={pathname === "/" || pathname === `/${locale}`}
+          active={
+            pathname === "/" ||
+            pathname === `/${locale}` ||
+            pathname === `/${locale}/`
+          }
         >
           {t.nav.links.welcome}
         </NavItem>
         <NavItem
           href={`/${locale}/speisekarte`}
-          active={pathname === `/${locale}/speisekarte`}
+          active={
+            pathname === `/${locale}/speisekarte` ||
+            pathname === `/${locale}/speisekarte/`
+          }
         >
           {t.nav.links.menu}
         </NavItem>
