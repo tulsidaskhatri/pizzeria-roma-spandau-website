@@ -12,8 +12,8 @@ export const Footer = ({ locale }) => {
           <p>030 - 286 495 67</p>
         </div>
         <nav className="flex flex-col gap-2">
-          <Link href="/">{t.nav.links.welcome}</Link>
-          <Link href="/speisekarte">{t.nav.links.menu}</Link>
+          <Link href={`/${locale}`}>{t.nav.links.welcome}</Link>
+          <Link href={`/${locale}/speisekarte`}>{t.nav.links.menu}</Link>
         </nav>
       </div>
     </footer>
