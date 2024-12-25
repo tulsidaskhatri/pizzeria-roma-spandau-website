@@ -8,7 +8,7 @@ export function MenuOptions({ category }) {
     return <></>;
   }
   return (
-    <div className="grid grid-cols-2 gap-x-14 px-8">
+    <div className="grid grid-cols-1 gap-x-14 px-8 sm:grid-cols-2">
       {category.options.map((option) => (
         <div
           key={option.key || option.title}
