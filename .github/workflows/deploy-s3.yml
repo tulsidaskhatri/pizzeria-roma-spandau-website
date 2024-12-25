@@ -1,0 +1,39 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main # This triggers the workflow when changes are pushed to the dev branch
+
+jobs:
+  deploy:
+    name: Deploy to S3
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js environment with version 22
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22" # Specify the Node.js version as 22
+
+      # Step 4: Install dependencies using npm
+      - name: Install dependencies
+        run: npm install
+
+      # Step 5: Build the project using npm
+      - name: Build the project
+        run: npm run build
+
+      # Step 6: Deploy to S3
+      - name: Deploy to S3
+        uses: shallwefootball/upload-s3-action@v1.3.3
+        with:
+          aws_key_id: ${{ secrets.AWS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          aws_bucket: ${{ secrets.AWS_BUCKET }}
+          source_dir: "out"
