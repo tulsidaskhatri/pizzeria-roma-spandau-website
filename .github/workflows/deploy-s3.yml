@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main # This triggers the workflow when changes are pushed to the dev branch
+    paths-ignore:
+      - "README.md"
+      - "infrastructure/**"
 
 jobs:
   deploy:
