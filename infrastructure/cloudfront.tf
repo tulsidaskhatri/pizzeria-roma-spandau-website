@@ -4,6 +4,7 @@ locals {
 }
 
 resource "aws_cloudfront_distribution" "this" {
+  depends_on = [aws_acm_certificate.ssl_certificate]
 
   enabled = true
 
@@ -44,9 +45,14 @@ resource "aws_cloudfront_distribution" "this" {
     }
   }
 
+  # SSL/TLS Certificate
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn      = aws_acm_certificate.ssl_certificate.arn
+    ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
+
+  aliases = ["pizzeriaroma-spandau.de"]
 
   price_class = "PriceClass_100"
 
