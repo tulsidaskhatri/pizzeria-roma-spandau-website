@@ -7,7 +7,7 @@ export const Footer = ({ locale }) => {
     <footer className="bg-primary-1 py-8 text-xs text-white">
       <div className="container grid grid-cols-2 px-12 sm:grid-cols-5">
         <div>
-          <p>Breite Straße 56</p>
+          <p>Breite Straße 58</p>
           <p>13597 Berlin</p>
           <p>030 - 286 495 67</p>
         </div>

@@ -5,7 +5,7 @@ export const Contact = ({ locale }) => {
   return (
     <div className="grid grid-cols-1 gap-8 bg-primary-1 px-6 py-8 text-center text-white sm:grid-cols-2 sm:px-12">
       <Info title={t.home.address.title}>
-        <p>Breite Straße 56</p>
+        <p>Breite Straße 58</p>
         <p>13597 Berlin | Spandau</p>
         <p>Deutschland</p>
       </Info>
