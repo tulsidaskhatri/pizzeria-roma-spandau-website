@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Willkommen! Pizzera Roma Spandau",
+  title: "Willkommen! Pizzeria Roma Spandau",
   description: "Bestellen Sie Pizza, Pasta und mehr!",
 };
 
