@@ -4,6 +4,7 @@ import { Accordion } from "./Accordian";
 import { AccordionItem } from "./AccordianItem";
 import { Dishes } from "./menu-dishes";
 import { MenuOptions } from "./menu-options";
+import { MultiQuantityMenuOptions } from "./multi-quantity-menu-options";
 
 export function Menu({ categories }) {
   const [isClient, setIsClient] = useState(false);
@@ -29,6 +30,7 @@ export function Menu({ categories }) {
               <MenuImage category={category} />
               <Dishes category={category} />
               <MenuOptions category={category} />
+              <MultiQuantityMenuOptions category={category} />
             </div>
           </AccordionItem>
         ))}
