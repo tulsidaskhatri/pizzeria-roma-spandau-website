@@ -2,10 +2,13 @@
 import { useState } from "react";
 import Link from "next/link";
 import { translations } from "@/locales";
+import { usePathname } from "next/navigation";
 
 export function MobileNavigation({ locale }) {
   const [isOpen, setIsOpen] = useState(false);
   const t = translations[locale];
+
+  const pathname = usePathname();
 
   // Function to handle menu close on link click
   const closeMenu = () => {
@@ -62,7 +65,13 @@ export function MobileNavigation({ locale }) {
             <li>
               <Link
                 href={`/${locale}`}
-                className="block text-lg hover:text-gray-300"
+                className={`block text-lg hover:text-gray-300 ${
+                  pathname === "/" ||
+                  pathname === `/${locale}` ||
+                  pathname === `/${locale}/`
+                    ? "font-bold"
+                    : ""
+                }`}
                 onClick={closeMenu}
               >
                 {t.nav.links.welcome}
@@ -71,7 +80,12 @@ export function MobileNavigation({ locale }) {
             <li>
               <Link
                 href={`/${locale}/speisekarte`}
-                className="block text-lg hover:text-gray-300"
+                className={`block text-lg hover:text-gray-300 ${
+                  pathname === `/${locale}/speisekarte` ||
+                  pathname === `/${locale}/speisekarte/`
+                    ? "font-bold"
+                    : ""
+                }`}
                 onClick={closeMenu}
               >
                 {t.nav.links.menu}
