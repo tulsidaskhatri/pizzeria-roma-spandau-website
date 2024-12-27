@@ -13,10 +13,10 @@ export function MobileNavigation({ locale }) {
   };
 
   return (
-    <>
+    <div className="sm:hidden">
       {/* Toggle Button */}
       <button
-        className="p-1 text-white focus:outline-none sm:hidden"
+        className="p-1 text-white focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle Menu"
       >
@@ -46,7 +46,7 @@ export function MobileNavigation({ locale }) {
       {/* Sliding Menu */}
       <div
         className={`fixed left-0 top-14 z-10 h-full w-full transform bg-slate-500 bg-opacity-0 text-white transition-colors duration-300 ${
-          isOpen ? "bg-opacity-40" : "bg-opacity-0"
+          isOpen ? "w-full bg-opacity-40" : "w-0 bg-opacity-0"
         }`}
         onClick={closeMenu}
       >
@@ -80,6 +80,6 @@ export function MobileNavigation({ locale }) {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 }

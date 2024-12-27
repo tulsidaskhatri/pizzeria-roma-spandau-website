@@ -23,11 +23,7 @@ export const DesktopNavigation = ({ locale }) => {
   }, []);
 
   return (
-    <nav
-      className={
-        "container mt-16 hidden w-full bg-primary-1 px-12 text-white sm:block"
-      }
-    >
+    <nav className={"container hidden bg-primary-1 px-12 text-white sm:block"}>
       <ul className="flex list-none gap-4">
         <NavItem
           href={`/${locale}`}

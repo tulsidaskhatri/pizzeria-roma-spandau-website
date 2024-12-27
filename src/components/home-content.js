@@ -6,12 +6,12 @@ import { OpeningTime } from "@/components/opening-time";
 
 export function HomeContent({ locale }) {
   return (
-    <main className="container bg-white">
+    <section className="container bg-white">
       <Hero locale={locale} />
       <OpeningTime locale={locale} />
       <GoogleMap />
       <Contact locale={locale} />
       <Credit />
-    </main>
+    </section>
   );
 }
