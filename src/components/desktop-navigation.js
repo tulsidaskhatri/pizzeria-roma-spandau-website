@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export const Navigation = ({ locale }) => {
+export const DesktopNavigation = ({ locale }) => {
   const t = translations[locale];
   const pathname = usePathname();
 
@@ -24,7 +24,9 @@ export const Navigation = ({ locale }) => {
 
   return (
     <nav
-      className={"container mt-16 w-full bg-primary-1 px-6 text-white sm:px-12"}
+      className={
+        "container mt-16 hidden w-full bg-primary-1 px-12 text-white sm:block"
+      }
     >
       <ul className="flex list-none gap-4">
         <NavItem

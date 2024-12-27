@@ -1,11 +1,13 @@
-import { Navigation } from "./navigation";
+import { MobileNavigation } from "./mobile-navigation";
+import { DesktopNavigation } from "./desktop-navigation";
 
 export const Header = ({ locale }) => {
   return (
     <header className="flex flex-col gap-6">
       <div className="fixed w-full bg-primary-1 py-3">
-        <div className="container mx-auto px-4">
-          <p className="text-center font-bold text-white sm:text-left">
+        <div className="container mx-auto flex items-center gap-4 px-4">
+          <MobileNavigation locale={locale} />
+          <p className="font-bold text-white">
             <a href={`/${locale}`}>Pizzeria Roma Spandau</a>
           </p>
           {/* <div className="flex justify-between">
@@ -17,7 +19,7 @@ export const Header = ({ locale }) => {
         </div>
       </div>
 
-      <Navigation locale={locale} />
+      <DesktopNavigation locale={locale} />
     </header>
   );
 };
