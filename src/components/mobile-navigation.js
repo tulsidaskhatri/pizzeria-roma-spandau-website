@@ -28,7 +28,7 @@ export function MobileNavigation({ locale }) {
           {/* Top Bar */}
           <span
             className={`absolute left-0 top-0 h-0.5 w-full rounded bg-white transition-transform duration-300 ${
-              isOpen ? "top-[2.7px] rotate-45" : "top-0 rotate-0"
+              isOpen ? "top-[7px] rotate-45" : "top-0 rotate-0"
             }`}
           ></span>
           {/* Middle Bar */}
@@ -40,7 +40,7 @@ export function MobileNavigation({ locale }) {
           {/* Bottom Bar */}
           <span
             className={`absolute left-0 top-3 h-0.5 w-full rounded bg-white transition-transform duration-300 ${
-              isOpen ? "top-1 -rotate-45" : "top-3 rotate-0"
+              isOpen ? "top-[8px] -rotate-45" : "top-3 rotate-0"
             }`}
           ></span>
         </div>
