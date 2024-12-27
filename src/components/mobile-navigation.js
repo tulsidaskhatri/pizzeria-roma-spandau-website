@@ -19,7 +19,7 @@ export function MobileNavigation({ locale }) {
     <>
       {/* Toggle Button */}
       <button
-        className="fixed left-4 top-4 z-20 rounded bg-blue-600 p-1 text-white focus:outline-none"
+        className="p-1 text-white focus:outline-none"
         onClick={() => setIsOpen(!isOpen)} // Toggle menu open/close
         aria-label="Toggle Menu"
       >
@@ -28,19 +28,19 @@ export function MobileNavigation({ locale }) {
           {/* Top Bar */}
           <span
             className={`absolute left-0 top-0 h-0.5 w-full rounded bg-white transition-transform duration-300 ${
-              isOpen ? "top-1.5 rotate-45" : "top-0 rotate-0"
+              isOpen ? "top-[2.7px] rotate-45" : "top-0 rotate-0"
             }`}
           ></span>
           {/* Middle Bar */}
           <span
-            className={`absolute left-0 top-2 h-0.5 w-full rounded bg-white transition-opacity duration-300 ${
+            className={`absolute left-0 top-1.5 h-0.5 w-full rounded bg-white transition-opacity duration-300 ${
               isOpen ? "opacity-0" : "opacity-100"
             }`}
           ></span>
           {/* Bottom Bar */}
           <span
             className={`absolute left-0 top-3 h-0.5 w-full rounded bg-white transition-transform duration-300 ${
-              isOpen ? "top-1.5 -rotate-45" : "top-3 rotate-0"
+              isOpen ? "top-1 -rotate-45" : "top-3 rotate-0"
             }`}
           ></span>
         </div>
@@ -48,7 +48,7 @@ export function MobileNavigation({ locale }) {
 
       {/* Sliding Menu */}
       <div
-        className={`fixed left-0 top-14 z-10 h-full transform bg-slate-500 bg-opacity-0 text-white transition-colors duration-300 ${
+        className={`fixed left-0 top-12 z-10 h-full transform bg-slate-500 bg-opacity-0 text-white transition-colors duration-300 ${
           isOpen ? "w-full bg-opacity-40" : "w-0 bg-opacity-0"
         }`}
         onClick={closeMenu}
