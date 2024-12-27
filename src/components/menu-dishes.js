@@ -21,7 +21,7 @@ export function Dishes({ category }) {
           outerClassname="border-b border-solid border-gray-700 last:border-b-0"
         >
           <div className="flex items-start gap-2 px-10 pb-4">
-            <p className="flex-1">{dish.ingredients}</p>
+            <p className="flex-1 text-sm">{dish.ingredients}</p>
             {dish.allergies && <p className="text-xs">{dish.allergies}</p>}
           </div>
         </AccordionItem>
