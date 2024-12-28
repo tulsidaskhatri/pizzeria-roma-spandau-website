@@ -19,7 +19,7 @@ export function MobileNavigation({ locale }) {
     <>
       {/* Toggle Button */}
       <button
-        className="p-1 text-white focus:outline-none"
+        className="block p-1 text-white sm:hidden"
         onClick={() => setIsOpen(!isOpen)} // Toggle menu open/close
         aria-label="Toggle Menu"
       >
