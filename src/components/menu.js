@@ -5,9 +5,11 @@ import { AccordionItem } from "./AccordianItem";
 import { Dishes } from "./menu-dishes";
 import { MenuOptions } from "./menu-options";
 import { MultiQuantityMenuOptions } from "./multi-quantity-menu-options";
+import { translations } from "@/locales";
 
-export function Menu({ categories }) {
+export function Menu({ categories, locale }) {
   const [isClient, setIsClient] = useState(false);
+  const t = translations[locale];
 
   useEffect(() => {
     setIsClient(true);
@@ -35,6 +37,7 @@ export function Menu({ categories }) {
           </AccordionItem>
         ))}
       </Accordion>
+      <p className="mt-8 text-sm text-gray-500">{t.menuPage.tax}</p>
     </section>
   );
 }

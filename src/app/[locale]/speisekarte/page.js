@@ -25,7 +25,7 @@ export default async function Spiesen({ params }) {
       </div>
 
       <div className="py-4">
-        <Menu categories={t.menuPage.categories} />
+        <Menu categories={t.menuPage.categories} locale={locale} />
       </div>
     </main>
   );
